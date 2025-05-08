@@ -1,0 +1,47 @@
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+/*
+  Keep :root minimal for now to avoid conflicts with Bootstrap's theming.
+  Bootstrap will handle the default font-family for the most part.
+  We can re-add specific font settings later if needed.
+*/
+:root {
+  /* color-scheme: light dark; */ /* Temporarily comment out to test */
+  /* You can set a very basic default font if absolutely necessary,
+     but Bootstrap should provide a good sans-serif stack. */
+  font-family: sans-serif; /* A very basic fallback */
+}
+
+body {
+  margin: 0; /* Common reset */
+  min-height: 100vh;
+  /* The App.jsx component already applies a background (bg-secondary-subtle)
+     to its main wrapper. If you need a global fallback, you can set it here,
+     e.g., background-color: #f8f9fa; */
+}
+
+/*
+  Ensure all other global styles for a, h1, button, etc.,
+  are commented out or removed for this test.
+  We want to see Bootstrap's raw styling as much as possible.
+*/
+
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+*/
+
+/*
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+*/
